@@ -15,4 +15,3 @@ with open(os.path.join('/Users/admin/Documents/python/dataset_3363_4.txt'), 'r')
         z += 1
     ouf.write((str(x1 / z) + ' ' + str(x2 / z) + ' ' + str(x3 / z) + '\n'))
 ouf.close()
-4455
