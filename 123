@@ -27,4 +27,3 @@ for key, value in dic.items():
         if key > j:
             j = key
 print(j, i, sep=' ')
-sdfasfsfsdfsfafdsaf
