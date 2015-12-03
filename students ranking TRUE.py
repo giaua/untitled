@@ -1,5 +1,5 @@
 import os
-x = x1 = x2 = x3 = 0
+x = z = x1 = x2 = x3 = 0
 ouf = open(os.path.join('/Users/admin/Documents/python/output.txt'), 'w')
 with open(os.path.join('/Users/admin/Documents/python/dataset_3363_4.txt'), 'r') as inf:
     for line in inf:
@@ -12,10 +12,6 @@ with open(os.path.join('/Users/admin/Documents/python/dataset_3363_4.txt'), 'r')
         ouf.write(str(x / 3))
         x = 0
         ouf.write('\n')
-    ouf.write(str(x1))
-    ouf.write(' ')
-    ouf.write(str(x2))
-    ouf.write(' ')
-    ouf.write(str(x3))
-    ouf.write('\n')
+        z += 1
+    ouf.write((str(x1 / z) + ' ' + str(x2 / z) + ' ' + str(x3 / z) + '\n'))
 ouf.close()
