@@ -1,0 +1,29 @@
+import os
+y = []
+x = []
+with open(os.path.join('/Users/admin/Documents/python/dataset_3363_3.txt'), 'r') as inf:
+    for line in inf:
+        y = [i.lower() for i in line.split()]
+        x.append(y)
+print(x)
+y = []
+for i in range(len(x)):
+    for j in range(len(x[i])):
+        y.append(x[i][j])
+print(y)
+dic = {}
+for i in y:
+    if i in dic:
+        dic[i] += 1
+    else:
+        dic[i] = 1
+print(dic)
+i = 0
+for key, value in dic.items():
+    if value > i:
+        i = value
+        j = key
+    elif value == i:
+        if key > j:
+            j = key
+print(j, i, sep=' ')
