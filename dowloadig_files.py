@@ -1,6 +1,6 @@
 import requests
 import os
-with open(os.path.join('C:\py3eg\dataset_3378_3.txt'), 'r') as inf:
+with open(os.path.join('/Users/admin/Documents/python/dataset_3378_3.txt'), 'r') as inf:
     url = inf.readline().strip()
 first = requests.get(url).text[:2]
 while first != 'We':
@@ -8,5 +8,6 @@ while first != 'We':
     first = requests.get(url).text[:2]
     url = 'https://stepic.org/media/attachments/course67/3.6.3/' + file_name
     print(file_name)
-with open(os.path.join('C:\py3eg\output.txt'), 'w') as ouf:
+with open(os.path.join('/Users/admin/Documents/python/output.txt'), 'w') as ouf:
     ouf.write(file_name)
+    ouf.write()
